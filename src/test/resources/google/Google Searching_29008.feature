@@ -11,7 +11,14 @@ Feature: Google Searching
     When the search phrase "panda" is entered
     Then results for "panda" are shown
     And the related results include Panda Express
-
+    
+@TSCID1862256
+  Scenario: Simple Google search
+    Given a web browser is on the Google page
+    When the search phrase "panda" is entered
+    Then results for "panda" are shown
+    And the related results include Panda Express
+    
 @TSCID1862257
   Scenario Outline: Simple Google searches
     Given a web browser is on the Google page
